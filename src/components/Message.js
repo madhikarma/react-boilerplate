@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class HelloWorld extends React.Component {
+class Message extends React.Component {
   render() {
     return (
       <div className="helloWorldContainer">
-        <p>Hello World</p>
+        <p>{this.props.text}</p>
       </div>
     );
   }
 }
 
-export default HelloWorld;
+export default Message;
