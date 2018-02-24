@@ -32,4 +32,4 @@ The server should now be running locally and the app accessible via your web bro
 
 ## Screenshots
 
-<img src="docs/images/app-screenshot-1.png" alt="app screenshot" width=840 height=525 />
+<img src="docs/images/app-screenshot-1.png" alt="app screenshot" width=80% />
