@@ -1,6 +1,6 @@
-# react-boilerplate
+# React Boilerplate
 
-Base project / template for a React web applicatiom.
+Boilerplate project template for a React web applicatiom.
 
 ## Requirements
 
