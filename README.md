@@ -28,7 +28,7 @@ Run the app locally using the built in dev server
 
     npm run dev-server
 
-The server should now be running locally and the app accessible via your web browser at http://localhost:8080/
+The server should now be running locally and the app accessible via your web browser at [http://localhost:8080/](http://localhost:8080/) 🎉
 
 ## Screenshots
 
