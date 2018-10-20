@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./styles.css";
 
-class Message extends React.Component {
+export default class Message extends React.Component {
   render() {
     return (
-      <div className="helloWorldContainer">
+      <div className="container">
         <p>{this.props.text}</p>
       </div>
     );
   }
 }
-
-export default Message;
