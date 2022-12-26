@@ -11,13 +11,16 @@ export default class Message extends React.Component {
   reloadData() {
     console.log("Message::reloadData");
     this.setState({ isLoading: true });
+    let headers = { "Content-Type": "application/json", "Accept": "application/json" }
+
     let options = {};
-    if (process.env.NODE_ENV === "dev") {
-      options.mode = "cors";
-    }
+    options.method = "GET";
+    options.headers = headers;
+
     fetch("http://localhost:3000/artists", options)
       .then(response => {
-        console.log(response);
+        console.log('status code: ', response.status); // 👉️ 200
+
         return response.json();
       })
       .then(json => {
@@ -37,12 +40,10 @@ export default class Message extends React.Component {
 
   handleCreateArtist() {
     console.log("Message::handleCreateArtist");
+    let headers = { "Content-Type": "application/json" }
     let options = {};
-    if (process.env.NODE_ENV === "dev") {
-      options.mode = "cors";
-    }
     options.method = "POST";
-    options.headers = { "Content-Type": "application/json" };
+    options.headers = headers;
     options.body = JSON.stringify({ name: "Metallica" });
     this.setState({ isLoading: true });
     fetch("http://localhost:3000/artists", options)
