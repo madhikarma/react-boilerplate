@@ -33,3 +33,19 @@ The server should now be running locally and the app accessible via your web bro
 ## Screenshots
 
 <img src="docs/images/app-screenshot-1.png" alt="app screenshot" width=80% />
+
+## TODO
+- [x] Basic React app with local API support from https://github.com/madhikarma/node-express-boilerplate
+- [ ] Fix .env support
+- [ ] Docker
+- [ ] ESLint
+- [ ] TypeScript
+- [ ] Unit Tests
+- [ ] Integration Tests
+- [ ] CI / CD
+  - [ ] CircleCI
+- [ ] Deploy
+  - [ ] AWS
+- [ ] Update dependencies
+- [ ] Update to React v18
+- [ ] Migrate to Create React App?
